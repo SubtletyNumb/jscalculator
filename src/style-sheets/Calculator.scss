@@ -1,0 +1,16 @@
+$background-clr: #f6f6f6;
+.calculator{
+border: 2px solid rgba(0, 0, 0, 0.548);
+height: 520px;
+width: 320px;
+background-color: $background-clr;
+}
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  $background-clr: #fcfcfc;
+}
+.row{
+  max-height: 50px;
+}
