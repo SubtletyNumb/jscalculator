@@ -3,15 +3,17 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import '../style-sheets/Display.css';
 const Display = () => {
-  // const [result, setResult] = useState({result: '0', operation: ''})
+  const [output, setOutput] = useState('');
+  const [input, setInput] = useState('');
   const {displayText, innerOperation} = useSelector((state) => state.calculator);
-  // useEffect(()=>{
-  //   setResult({result: displayText, operation: innerOperation})
-  // },[])
+  useEffect(()=>{
+    setInput(displayText);
+    setOutput(innerOperation);
+  },[displayText, innerOperation])
   return(
     <div id="display">
-      <p className='result'>{innerOperation}</p>
-      <p id='operation-display' className='operation'>{displayText}</p>
+      <p className='result'>{output}</p>
+      <p id='operation-display' className='operation'>{input}</p>
     </div>
   )
 }
