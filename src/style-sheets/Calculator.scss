@@ -1,7 +1,7 @@
 $background-clr: #f6f6f6;
 .calculator{
-border: 2px solid rgba(0, 0, 0, 0.548);
-height: 520px;
+border: 2px solid rgba(0, 0, 0, 0.849);
+height: 470px;
 width: 320px;
 background-color: $background-clr;
 }
@@ -12,5 +12,6 @@ background-color: $background-clr;
   $background-clr: #fcfcfc;
 }
 .row{
+  display: flex;
   max-height: 50px;
 }

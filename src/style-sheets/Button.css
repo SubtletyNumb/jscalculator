@@ -18,6 +18,8 @@
 
 .button:hover {
   background-color: #fcfcfc;
+  box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, 0.342) inset;
+  border: 1px solid rgb(161, 161, 161);
 }
 
 .operator {
@@ -26,10 +28,11 @@
 }
 
 .equal {
-  background-color: rgb(97, 97, 97);
+  background-color: rgba(56, 56, 56, 0.685);
   color: white;
 }
 
 .equal:hover {
   background-color: rgb(126, 125, 125);
+  box-shadow: 0px 0px 1px 3px rgba(110, 109, 109, 0.342) inset;
 }/*# sourceMappingURL=Button.css.map */
